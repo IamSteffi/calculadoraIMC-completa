@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recomendacion"
+    tools:context=".Receta">
+
+    <LinearLayout
+        android:layout_width="341dp"
+        android:layout_height="616dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/vampiro_one"
+            android:gravity="center"
+            android:text="Recomendaciones"
+            android:textSize="30dp"
+            android:textColor="#713112" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#2E8857"
+                android:fontFamily="@font/b612_mono"
+                android:gravity="center"
+                android:text="" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtIMC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="#5b1f00"
+                android:fontFamily="@font/b612_mono"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="@font/candal"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#26c6da"
+            android:textSize="20dp" />
+
+
+        <ViewFlipper
+            android:id="@+id/v_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ScrollView
+            android:id="@+id/txtRedomendacion"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvRecomendacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ruluko"
+                android:gravity="center"
+                android:text="" />
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
